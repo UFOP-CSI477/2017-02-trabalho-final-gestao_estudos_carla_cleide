@@ -2,12 +2,12 @@
 	box-sizing: border-box;
 }
 
-ul {
-    margin: 0;
+.task{
+	margin: 0;
     padding: 0;
 }
 
-ul li{
+.list{
 	cursor: pointer;
 	position: relative;
 	padding: 12px 8px 12px 40px;
@@ -16,14 +16,30 @@ ul li{
 	transition: 0.2s;
 }
 
-ul li:nth-child(odd) {
-    background: #f9f9f9;
+.list:nth-child(odd){
+	background: #f9f9f9;
+}
+
+.menu-style{
+	font-family: serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #888;
+    background-color:#cdcdcd
+    line-height: 30px;
+    text-align: center;
+    transition: 0.2s;
 }
 
 ul li.checked {
     background: #888;
     color: #fff;
     text-decoration: line-through;
+    cursor: pointer;
+	position: relative;
+	padding: 12px 8px 12px 40px;
+	font-size: 18px;
+	transition: 0.2s;
 }
 
 .header{
@@ -62,3 +78,22 @@ input{
 .addBtn:hover {
     background-color: #bbb;
 }
+
+.top-content .text {
+	color: #cdcdcd;
+}
+
+.top-content .text h1 { color: #000; }
+
+.top-content .description {
+	margin: 20px 0 10px 0;
+}
+
+.top-content .description p { opacity: 0.8; }
+
+.top-content .description a {
+	color: #fff;
+}
+.top-content .description a:hover,
+.top-content .description a:focus { border-bottom: 1px dotted #fff; }
+

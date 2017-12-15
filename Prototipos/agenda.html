@@ -3,10 +3,36 @@
 	<head>
 		<title>Lista de Tarefas</title>
 
+		<meta name="robots" content="noindex, nofollow">
+
 		<link rel="stylesheet" href="estilo-agenda.css">
 		<link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
 	</head>
 	<body>
+
+		<div class="top-content">
+
+        	<div class="inner-bg">
+            	<div class="container">
+
+					<nav class="navbar navbar-inverse">
+		                <div class="container-fluid">
+		                    <div class="navbar-header">
+		                        <a class="navbar-brand menu-style" href="#">Gestão de Estudos</a>
+		                    </div>
+		                        
+		                    <ul class="nav navbar-nav menu-style">
+		                        <li><a href="#">Home</a></li>
+		                        <li ><a href="Login.html">Login</a></li>
+		                        <li><a href="#">Cadastro</a></li>
+		                        <li><a href="#">Calendário</a></li>
+		                        <li class="active"><a href="#">Lista de Tarefas</a></li>
+		                    </ul>
+		                </div>
+		            </nav>
+		        </div>
+		    </div>
+		</div>
 
 		<div id="titulo" class="header">
 			<h2>Lista de Tarefas</h2>
@@ -14,11 +40,11 @@
 			<span class="addBtn">Adicionar</span>
 		</div>
 
-		<ul id="tarefa">
-			<li>Colocar matéria em dia</li>
-			<li>Estudar JavaScript</li>
-			<li>Cobrar do grupo a parte restante do trabalho</li>
-			<li>Enviar atividade para o moodle</li>
+		<ul id="tarefa" class="task">
+			<li class="list">Colocar matéria em dia</li>
+			<li class="list">Estudar JavaScript</li>
+			<li class="list">Cobrar do grupo a parte restante do trabalho</li>
+			<li class="list">Enviar atividade para o moodle</li>
 			<li class="checked">Incluir CSS no repositório da proposta</li>
 		</ul>
 
