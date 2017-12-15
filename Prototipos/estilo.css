@@ -12,21 +12,15 @@ body {
 }
 
 
-strong { font-weight: 500; }
 
-a, a:hover, a:focus {
+
+a {
 	color: #de615e;
 	text-decoration: none;
     -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
 }
 
-h1, h2 {
-	margin-top: 10px;
-	font-size: 38px;
-    font-weight: 100;
-    color: #555;
-    line-height: 50px;
-}
+
 
 h3 {
 	font-size: 22px;
@@ -36,12 +30,6 @@ h3 {
 }
 
 
-
-.top-content .jumbotron{
-  text-align: center;
-  background-color:#87CEFA
-
-}
 
 .top-content .text {
 	color: #cdcdcd;
@@ -103,14 +91,8 @@ h3 {
 	text-align: left;
 }
 
-.form-bottom form textarea {
-	height: 100px;
-}
+
 
 .form-bottom form button.btn {
 	width: 100%;
-}
-
-.form-bottom form .input-error {
-	border-color: #de615e;
 }
