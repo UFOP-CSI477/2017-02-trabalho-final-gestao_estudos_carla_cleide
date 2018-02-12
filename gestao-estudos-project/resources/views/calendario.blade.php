@@ -1,4 +1,4 @@
-@extends('layout.principal')
+@extends('layout.menu')
 
 <!DOCTYPE html>
 <html>
@@ -8,8 +8,7 @@
         
         <link rel="stylesheet" href="<?php echo asset('css/calendario-layout.css')?>" type="text/css">
 
-        <!-- scripts necessários para suporte ao calendário -->
-        <script type="text/javascript" src="<?php echo asset('js/jquery-3.2.1.js')?>"></script>
+        <!-- script necessário para suporte ao calendário -->        
         <script type="text/javascript" src="<?php echo asset('js/jquery-ui-1.12.1.custom/jquery-ui.js')?>"></script>
        
     </head>
@@ -26,8 +25,8 @@
                 inline: true,
                 showOtherMonths: true,
                 dayNames: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'],
-                dayNamesMin: ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'],
                 dayNamesShort: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab'],
+                dayNamesMin: ['D', 'S', 'T', 'Q', 'Q', 'S', 'S'],                
                 monthNames: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
                 monthNamesShort: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
             });        

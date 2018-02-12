@@ -22,3 +22,7 @@ Route::get('/index', function () {
 Route::get('/calendario', function () {
     return view('calendario');
 });
+
+Route::get('/menu', function () {
+    return view('layout/menu');
+});
