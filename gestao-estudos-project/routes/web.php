@@ -26,3 +26,6 @@ Route::get('/calendario', function () {
 Route::get('/menu', function () {
     return view('layout/menu');
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
