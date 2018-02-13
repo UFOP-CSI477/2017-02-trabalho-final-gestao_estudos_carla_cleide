@@ -22,3 +22,10 @@ Route::get('/index', function () {
 Route::get('/calendario', function () {
     return view('calendario');
 });
+
+Route::get('/menu', function () {
+    return view('layout/menu');
+});
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
