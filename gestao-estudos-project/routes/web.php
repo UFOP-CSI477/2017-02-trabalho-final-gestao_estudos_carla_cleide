@@ -18,6 +18,9 @@ Route::get('/', function () {
 Route::get('/index', function () {
     return view('layout/principal');
 });
+Route::get('/horario', function () {
+    return view('horario');
+});
 
 Route::get('/calendario', function () {
     return view('calendario');
