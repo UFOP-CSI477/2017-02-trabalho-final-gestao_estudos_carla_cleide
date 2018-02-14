@@ -1,5 +1,3 @@
-@extends('layout.menu')
-
 <!DOCTYPE html>
 <html>
     <head>
