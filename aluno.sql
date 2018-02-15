@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: 14-Fev-2018 às 20:03
+-- Generation Time: 15-Fev-2018 às 02:29
 -- Versão do servidor: 5.7.19
 -- PHP Version: 7.1.9
 
@@ -52,10 +52,10 @@ CREATE TABLE IF NOT EXISTS `disciplina` (
   `nota_1` decimal(5,2) DEFAULT NULL,
   `nota_2` decimal(5,2) DEFAULT NULL,
   `nota_3` decimal(5,2) DEFAULT NULL,
-  `data1` date NOT NULL,
-  `data2` date NOT NULL,
-  `data3` date NOT NULL,
-  `hora` time NOT NULL,
+  `data1` date DEFAULT NULL,
+  `data2` date DEFAULT NULL,
+  `data3` date DEFAULT NULL,
+  `hora` time DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 COMMIT;
