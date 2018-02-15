@@ -56,7 +56,7 @@
                           <a href="{{url('/calendario')}}"><i></i>  Calendário </a>
                       </li>
                         <li>
-                            <a href="#" data-toggle="collapse" data-target="#submenu-1"><i></i>Disciplinas <i class="fa fa-fw fa-angle-down pull-right"></i></a>
+                            <a href="#" data-toggle="collapse" data-target="#submenu-1"><i></i>Disciplinas <i class="fa fa-fw  pull-right"></i></a>
                             <ul id="submenu-1" class="collapse">
                                 <li><a href="#"><i class="fa fa-angle-double-right"></i> </a></li>
                                 <li><a href="#"><i class="fa fa-angle-double-right"></i> </a></li>
@@ -66,7 +66,7 @@
 
                         </li>
                         <li>
-                            <a href="#"><i></i>  Agenda </a>
+                            <a href="#"><i></i> Agenda </a>
                         </li>
                         <li>
                             <a href="{{url('/horario')}}"><i></i> Horário das Aulas </a>
