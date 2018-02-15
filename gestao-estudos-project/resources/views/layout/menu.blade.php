@@ -10,10 +10,10 @@
 
         <link rel="stylesheet" href="<?php echo asset('css/menu-layout.css')?>" type="text/css">
         <!--Conteúdo de cabeçalho-->
-        @yield('header')
+        
         <script type="text/javascript" src="<?php echo asset('js/jquery-3.2.1.js')?>"></script>
         <script type="text/javascript" src="<?php echo asset('js/menu.js')?>"></script>
-
+        
     </head>
     <body>
 

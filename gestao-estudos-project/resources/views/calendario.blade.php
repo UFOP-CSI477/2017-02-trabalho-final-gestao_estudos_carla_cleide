@@ -1,3 +1,6 @@
+@extends('layout.menu')
+
+@section('conteudo')
 <!DOCTYPE html>
 <html>
     <head>
@@ -32,3 +35,5 @@
         
     </body>
 </html>
+
+@endsection('conteudo')
