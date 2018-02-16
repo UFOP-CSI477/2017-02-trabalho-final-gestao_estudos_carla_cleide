@@ -15,17 +15,21 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/index', function () {
-    return view('layout/principal');
-});
-Route::get('/horario', function () {
-    return view('horario');
-});
-
-Route::get('/calendario', function () {
-    return view('calendario');
-});
-
+Route::get('events', 'EventController@index');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/disciplina1', 'Disciplina1Controller@show');
+
+Route::get('/disciplina2', function () {
+    return view('disciplina2');
+});
+
+Route::get('/agenda', function () {
+    return view('agenda');
+});
+
+Route::get('/horario', function () {
+    return view('horario');
+});
