@@ -49,26 +49,8 @@
                         @else
                             <li><a href="{{ url('/events') }}">Calendário</a></li>
 
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
-                                    Disciplinas <span class="caret"></span>
-                                </a>
-
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="{{ route('logout') }}"
-                                            onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                            Nome
-                                        </a>
-
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                            {{ csrf_field() }}
-                                        </form>
-                                    </li>
-                                </ul>
-                            </li>
-
+                            
+                            <li><a href="{{ url('/disciplina1') }}">Disciplinas</a></li>
                             <li><a href="{{ url('/agenda') }}">Agenda</a></li>
                             <li><a href="{{ url('/horario') }}">Horario</a></li>
 

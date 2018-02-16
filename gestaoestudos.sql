@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 15-Fev-2018 às 21:18
+-- Generation Time: 16-Fev-2018 às 05:49
 -- Versão do servidor: 10.1.21-MariaDB
 -- PHP Version: 7.1.1
 
@@ -23,7 +23,7 @@ SET time_zone = "+00:00";
 CREATE DATABASE IF NOT EXISTS `gestaoestudos` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 USE `gestaoestudos`;
 
--- DROP USER `aluno@``localhost`;
+-- DROP USER `aluno`@`localhost`;
 CREATE USER `aluno`@`localhost` identified by "123456";
 GRANT ALL PRIVILEGES ON gestaoestudos.* TO `aluno`@`localhost`;
 FLUSH PRIVILEGES;
@@ -98,7 +98,9 @@ INSERT INTO `events` (`id`, `title`, `start_date`, `end_date`, `created_at`, `up
 (1, 'Demo Event-1', '2017-09-11', '2017-09-12', '2018-02-15 14:38:16', '2018-02-15 14:38:16'),
 (2, 'Demo Event-2', '2017-09-11', '2017-09-13', '2018-02-15 14:38:16', '2018-02-15 14:38:16'),
 (3, 'Demo Event-3', '2017-09-14', '2017-09-14', '2018-02-15 14:38:16', '2018-02-15 14:38:16'),
-(4, 'Demo Event-3', '2017-09-17', '2017-09-17', '2018-02-15 14:38:16', '2018-02-15 14:38:16');
+(4, 'Demo Event-3', '2017-09-17', '2017-09-17', '2018-02-15 14:38:16', '2018-02-15 14:38:16'),
+(5, 'Prova de Robótica', '2018-02-16', '2018-02-16', '2018-02-01 02:00:00', '2018-02-01 02:00:00'),
+(6, 'Atividades de WEB', '2018-02-15', '2018-02-18', '2018-02-01 21:07:17', '2018-02-08 21:00:00');
 
 -- --------------------------------------------------------
 
@@ -215,7 +217,7 @@ ALTER TABLE `disciplina`
 -- AUTO_INCREMENT for table `events`
 --
 ALTER TABLE `events`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `migrations`
 --
