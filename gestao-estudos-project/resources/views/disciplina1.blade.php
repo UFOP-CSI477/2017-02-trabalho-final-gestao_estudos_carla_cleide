@@ -17,11 +17,21 @@
                     Sala: {{$d->sala}}
                     <br>Professor:{{$d->nome_prof}}
                     <br>Horário de aula: {{$d->horario_inicio}} = {{$d->horario_fim}}
-                    
+
+                    <form action="disciplina1" method="get">
+
                     <br><br>Nota 1: <input type="text" name="nota1">
-                    <br><br>Nota 2: <input type="text" name="nota1">
-                    <br><br>Nota 3: <input type="text" name="nota1">
+                    <br><br>Nota 2: <input type="text" name="nota2">
+                    <br><br>Nota 3: <input type="text" name="nota3">
+
                     <br><br>Média total: <input type="text" name="nota1">
+
+                    <input type="submit" name="calcular" value="Calcular">
+
+                    </form>
+                    
+                    
+                    
                 @endforeach
 
                 </div>                
