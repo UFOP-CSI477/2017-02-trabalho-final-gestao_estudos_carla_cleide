@@ -23,7 +23,7 @@ SET time_zone = "+00:00";
 CREATE DATABASE IF NOT EXISTS `gestaoestudos` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 USE `gestaoestudos`;
 
--- DROP USER 'aluno'`@`localhost`;
+-- DROP USER `aluno@``localhost`;
 CREATE USER `aluno`@`localhost` identified by "123456";
 GRANT ALL PRIVILEGES ON gestaoestudos.* TO `aluno`@`localhost`;
 FLUSH PRIVILEGES;
